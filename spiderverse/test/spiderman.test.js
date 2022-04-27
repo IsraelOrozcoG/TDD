@@ -7,7 +7,7 @@ describe("Prueba de unidad para la clase Spiderman", () => {
       //En este caso se instancia un objeto de Spiderman con la informacion
       
       const andrewGarfield = new Spiderman("Spiderman Sony",31,"Andrew Garfield",2, "Sony")
-      
+      const tomHolland = new Spiderman("Spiderman Marvel", 25, "Tom Holland", 5, "Marvel")
 
       //Validación para que el codigo funcione de la forma esperada
       expect(andrewGarfield.name).toBe("Spiderman Sony")
@@ -15,5 +15,6 @@ describe("Prueba de unidad para la clase Spiderman", () => {
       expect(andrewGarfield.actor).toBe("Andrew Garfield")
       expect(andrewGarfield.movies).toBe(2)
       expect(andrewGarfield.studio).toBe("Sony")
+      expect(tomHolland.getInfo()).toBe("Hey, I'm Tom Holland from Marvel Studio")
     });
   })
