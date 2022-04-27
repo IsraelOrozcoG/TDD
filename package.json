@@ -4,8 +4,12 @@
   "description": "Ejericio1",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "IsraelOrozco",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.0.1"
+  }
 }
