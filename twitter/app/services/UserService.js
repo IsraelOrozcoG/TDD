@@ -10,7 +10,7 @@ class UserService{
     }
 
     static updateUsername(user,username){
-        user.username= username;
+        user.username= username
     }
 
 }
