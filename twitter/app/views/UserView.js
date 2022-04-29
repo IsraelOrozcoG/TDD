@@ -5,7 +5,7 @@ class UserView {
         if (!payload) {
             return { error: 'payload no existe' }
         }
-        if (payload.username === null || Number.isNaN(payload.name) || !payload.id) {
+        if (!payload.username  || !payload.name || !payload.id) {
             return { error: 'necesitan tener un valor válido' }
         }
 
