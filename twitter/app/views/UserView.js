@@ -9,6 +9,10 @@ class UserView {
             return { error: 'necesitan tener un valor válido' }
         }
 
+        if (payload.username === null || payload.name === null || payload.id === null) {
+            return { error: 'necesitan tener un valor válido' }
+        }
+
         const user = UserService.create(payload.id, payload.username, payload.name)
 
         return user
